@@ -11,6 +11,6 @@ jobs:
     steps:
       -uses: actions/checkout@v2
       -name: CSS and Javascript
-        run: |
-          npm install
-          npm run prod
+       run: |
+        npm install
+        npm run prod
