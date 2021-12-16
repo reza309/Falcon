@@ -1,0 +1,16 @@
+name: Deploy Application
+
+on: 
+  push:
+  branches:
+    -main
+jobs:
+create-deployment-artifacts
+name:Create deployment artifacts
+runs-on: windows-latest
+steps:
+  -uses: actions/checkout@v2
+  -name:CSS and Javascript
+  run: |
+  npm install
+  npm run prod
