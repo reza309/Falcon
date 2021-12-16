@@ -13,5 +13,5 @@ jobs:
 
       -name: Compile CSS and Javascript
        run: |
-        npm install
-        npm run prods
+        echo npm install
+        echo npm run prods
