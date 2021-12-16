@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/msprogxy/falcon.msprog.xyz/
-    - /bin/cp -R falcon $DEPLOYPATH
+    - /bin/cp * $DEPLOYPATH
     
