@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/msprogxy/public_html/
+    - export DEPLOYPATH=/home/msprogxy/falcon.msprog.xyz/
     - /bin/cp * $DEPLOYPATH
     
