@@ -80,11 +80,11 @@
     <!-- carousel logo end -->
     <!-- custom carousel start -->
     <div class="custom-slide">
-        <div class="c-c-item" style="background-image: url(images/galaxi-tech.jpg);"></div>
-        <div class="c-c-item" style="background-image: url(images/galaxi-tech.jpg);"></div>
-        <div class="c-c-item" style="background-image: url(images/galaxi-tech.jpg);"></div>
-        <div class="c-c-item" style="background-image: url(images/galaxi-tech.jpg);"></div>
-        <div class="c-c-item" style="background-image: url(images/galaxi-tech.jpg);"></div>
+        <div class="c-c-item" style="background-image: url({{asset('images/galaxi-tech.jpg')}});"></div>
+        <div class="c-c-item" style="background-image: url({{asset('images/galaxi-tech.jpg')}});"></div>
+        <div class="c-c-item" style="background-image: url({{asset('images/galaxi-tech.jpg')}});"></div>
+        <div class="c-c-item" style="background-image: url({{asset('images/galaxi-tech.jpg')}});"></div>
+        <div class="c-c-item" style="background-image: url({{asset('images/galaxi-tech.jpg')}});"></div>
     </div>
     <!-- custom carousel end -->
     {{$slot}}
