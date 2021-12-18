@@ -29,9 +29,37 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">About</a>
                     </li>
-                    <li class="nav-item ">
-                        <a href="login.html" class="nav-link">Login</a>
-                    </li>
+                    
+                    @if(Route::has('login'))
+                        @auth
+                            @if(Auth::user()->u_type=='ADM')
+                                <li class="nav-item ">
+                                    <a href="{{route('admin.dashboard')}}" class="nav-link">Admin</a>
+                                </li>
+                                <form action="{{route('logout')}}" method="post">
+                                    @csrf
+                                    <li class="nav-item">
+                                        <a href="{{route('logout')}}" class="nav-link" onclick="event.preventDefault();closest('form').submit();">logout</a>
+                                    </li>
+                                </form>
+                            @else
+                                <li class="nav-item ">
+                                    <a href="{{route('user.dashboard')}}" class="nav-link">User</a>
+                                </li>
+                                <form action="{{route('logout')}}" method="post">
+                                    @csrf
+                                    <li class="nav-item">
+                                        <a href="{{route('logout')}}" class="nav-link" onclick="event.preventDefault();closest('form').submit();">logout</a>
+                                    </li>
+                                </form>
+                            @endif
+                        @else
+                        <li class="nav-item ">
+                            <a href="{{route('login')}}" class="nav-link">Login</a>
+                        </li>
+                        @endif
+                    @endif
+                        
                 </ul>
                 <form action="#" method="post" class="d-flex mb-lg-0 mb-3">
                     <input type="text" name="search" class="form-control me-2">
