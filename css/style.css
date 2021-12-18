@@ -36,7 +36,7 @@
     position: absolute;
     animation: c_slide 25s infinite;
     opacity: 0;
-	background-image: url('images/galaxi-tech.jpg');
+	/* background-image: url('images/galaxi-tech.jpg'); */
 }
 .custom-slide>.c-c-item:nth-child(2){
     animation-delay: 5s;
