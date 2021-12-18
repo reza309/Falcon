@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/',HomeComponent::class);
+Route::get('/',HomeComponent::class)->name('main.home');
 
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

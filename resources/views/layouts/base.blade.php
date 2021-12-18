@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item bg-primary">
-                        <a href="#" class="nav-link custom-active">Home</a>
+                        <a href="{{route('main.home')}}" class="nav-link custom-active">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="demo.html" class="nav-link">Products</a>
