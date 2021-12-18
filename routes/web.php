@@ -26,7 +26,7 @@ Route::get('/',HomeComponent::class);
 // })->name('dashboard');
 
 // For addmin 
-Route::get('login', \App\Http\Livewire\Login::class)->name('login');
+
 Route::middleware(['auth:sanctum','verified'])->group(function(){
     Route::get('/user/dashboard',UserDashboardComponent::class)->name('user.dashboard');
 });
