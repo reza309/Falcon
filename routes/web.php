@@ -1,5 +1,5 @@
 <?php
-use App\Http\livewire\HomeComponent;
+use App\Http\Livewire\HomeComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
