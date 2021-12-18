@@ -29,9 +29,6 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">login</a>
-                    </li>
                     @if(Route::has('login'))
                         @auth
                             @if(Auth::user()->u_type=='ADM')
