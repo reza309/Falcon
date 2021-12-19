@@ -19,7 +19,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(window).resize(function(){
         if($(window).width()<570){
-            $(".nav-item").removeClass("bg-primary");
+            $(".nav-item").removeClass("btn-custom");
             $(".carousel-logo-img").css({
                 'width':'110px'
             });
@@ -27,7 +27,7 @@ $(document).ready(function(){
                 'display':'block'
             });
         }else{
-            $(".nav-item:first-child").addClass("bg-primary");
+            $(".nav-item:first-child").addClass("btn-custom");
             $(".carousel-logo-img").css({
                 'width':'100%'
             });
@@ -37,7 +37,7 @@ $(document).ready(function(){
         }
     });
     if($(window).width()<570){
-        $(".nav-item").removeClass("bg-primary");
+        $(".nav-item").removeClass("btn-custom");
         $(".carousel-logo-img").css({
             'width':'110px'
         });
@@ -45,7 +45,7 @@ $(document).ready(function(){
             'display':'block'
         });
     }else{
-        $(".nav-item:first-child").addClass("bg-primary");
+        $(".nav-item:first-child").addClass("btn-custom");
         $(".carousel-logo-img").css({
             'width':'100%'
         });

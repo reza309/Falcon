@@ -10,7 +10,7 @@
     @livewireStyles
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark theme-color" style="border-bottom: 4px solid #0D6EFD; padding-bottom: 0;">
+    <nav class="navbar navbar-expand-sm navbar-dark theme-color" style="border-bottom: 4px solid #4C0DB5; padding-bottom: 0;">
         <div class="container-fluid">
             <a href="javascript:void(0)" class="navbar-brand">
                 <img src="{{asset('images/falcon-logo.png')}}" alt="Falcon Soft" style="width:57px" srcset="" class="rounded-pill">
@@ -20,7 +20,7 @@
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item bg-primary">
+                    <li class="nav-item btn-custom">
                         <a href="{{route('main.home')}}" class="nav-link custom-active">Home</a>
                     </li>
                     <li class="nav-item">
@@ -61,8 +61,8 @@
                         
                 </ul>
                 <form action="#" method="post" class="d-flex mb-lg-0 mb-3">
-                    <input type="text" name="search" class="form-control me-2">
-                    <button type="button" class="btn btn-primary">Search</button>
+                    <input type="search" name="search" class="form-control search-filed">
+                    <button type="button" class="btn btn-primary search-btn btn-custom">Search</button>
                 </form>
             </div>
         </div>

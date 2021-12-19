@@ -19,38 +19,38 @@
     </body>
 </html> -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AS Soft Home</title>
+    <title>Falcon Soft Ltd.</title>
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('app.css') }}">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="tools/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('tools/fontawesome-free-5.12.0-web/css/all.css')}}">
     
     <!-- Scripts -->
     <script src="{{ asset('app.js') }}" defer></script>
-    <script src="js/jQuery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{asset('js/jQuery.js')}}"></script>
+    <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
     <!-- <script src="tools/fontawesome-free-5.12.0-web/js/all.min.js"></script> -->
-    <script src="js/nav.js"></script>
+    <script src="{{asset('js/nav.js')}}"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark theme-color" style="border-bottom: 4px solid #0D6EFD; padding-bottom: 0;">
+    <nav class="navbar navbar-expand-sm navbar-dark theme-color" style="border-bottom: 4px solid #4C0DB5; padding-bottom: 0;">
         <div class="container-fluid">
             <a href="javascript:void(0)" class="navbar-brand">
-                <img src="images/falcon-logo.png" alt="Falcon Soft" style="width:57px" srcset="" class="rounded-pill">
+                <img src="{{asset('images/falcon-logo.png')}}" alt="Falcon Soft" style="width:57px" srcset="" class="rounded-pill">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item bg-primary">
-                        <a href="#" class="nav-link custom-active">Home</a>
+                    <li class="nav-item btn-custom">
+                        <a href="/" class="nav-link custom-active">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="demo.html" class="nav-link">Products</a>
@@ -59,12 +59,12 @@
                         <a href="#" class="nav-link">About</a>
                     </li>
                     <li class="nav-item ">
-                        <a href="#" class="nav-link">Login</a>
+                        <a href="{{route('login')}}" class="nav-link">Login</a>
                     </li>
                 </ul>
                 <form action="#" method="post" class="d-flex mb-lg-0 mb-3">
-                    <input type="text" name="search" class="form-control me-2">
-                    <button type="button" class="btn btn-primary">Search</button>
+                    <input type="text" name="search" class="form-control search-filed">
+                    <button type="button" class="btn btn-primary search-btn btn-custom">Search</button>
                 </form>
             </div>
         </div>
@@ -73,11 +73,11 @@
     <!-- carousel logo end -->
     <!-- custom carousel start -->
     <div class="custom-slide">
-        <div class="c-c-item" style="background-image: url(images/galaxi-tech.jpg);"></div>
-        <div class="c-c-item" style="background-image: url(images/galaxi-tech.jpg);"></div>
-        <div class="c-c-item" style="background-image: url(images/galaxi-tech.jpg);"></div>
-        <div class="c-c-item" style="background-image: url(images/galaxi-tech.jpg);"></div>
-        <div class="c-c-item" style="background-image: url(images/galaxi-tech.jpg);"></div>
+        <div class="c-c-item" style="background-image: url({{asset('images/galaxi-tech.jpg')}});"></div>
+        <div class="c-c-item" style="background-image: url({{asset('images/galaxi-tech.jpg')}});"></div>
+        <div class="c-c-item" style="background-image: url({{asset('images/galaxi-tech.jpg')}});"></div>
+        <div class="c-c-item" style="background-image: url({{asset('images/galaxi-tech.jpg')}});"></div>
+        <div class="c-c-item" style="background-image: url({{asset('images/galaxi-tech.jpg')}});"></div>
     </div>
     <!-- custom carousel end -->
     <!-- login section -->
@@ -99,7 +99,7 @@
                 <div class="row">
                     <div class="col-lg-4 mb-3 mb-lg-0">
                         <div class="float-start">
-                            <img src="images/falcon-logo.png" alt="Falcon icon" class="img img-fluid foot-logo">
+                            <img src="{{asset('images/falcon-logo.png')}}" alt="Falcon icon" class="img img-fluid foot-logo">
                         </div>
                         <span class="text-white-50 d-block mt-lg-3 ps-lg-5 copy-txt-m">
                             Alright Reserved&copy; Falcon Soft Ltd.

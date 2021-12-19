@@ -16,7 +16,7 @@
                                 <div class="p-lg-4 ps-sm-3">
                                     <h1 class="text-white-50">It`s Time to create your business website!</h1>
                                     <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <a href="http://" class="btn btn-custom btn-sm btn-primary">Are you Ready?</a>
+                                    <a href="http://" class="btn btn-custom btn-sm btn-primary border-0 btn-custom">Are you Ready?</a>
                                 </div>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                                 <div class="p-lg-4 ps-md-3 ps-sm-3">
                                     <h1 class="text-white-50">It`s Time to create your business website!</h1>
                                     <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <a href="http://" class="btn btn-custom btn-sm btn-primary">Are you Ready?</a>
+                                    <a href="http://" class="btn btn-custom btn-sm btn-primary btn-custom border-0">Are you Ready?</a>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
                                 <div class="p-lg-4 ps-sm-3">
                                     <h1 class="text-white-50">It`s Time to create your business website!</h1>
                                     <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <a href="http://" class="btn btn-custom btn-sm btn-primary">Are you Ready?</a>
+                                    <a href="http://" class="btn btn-custom btn-sm btn-primary btn-custom border-0">Are you Ready?</a>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                         <div class="pe-lg-4">
                             <span class="text-white filter-title">Choose your Business Category</span>
                             <form action="#" method="post" class="d-flex">
-                                <input type="text" name="search" class="form-control me-2" list="business-cat" placeholder="Business Category">
+                                <input type="text" name="search" class="form-control search-filed" list="business-cat" placeholder="Business Category">
                                 <datalist id="business-cat">
                                     <option value="Software">Software Business</option>
                                     <option value="E-commerce">E-commerce</option>
@@ -73,7 +73,7 @@
                                     <option value="Real State">Real State</option> 
                                     <option value="Garments">Garments</option>
                                 </datalist>
-                                <button type="button" class="btn btn-primary">Submit</button>
+                                <button type="button" class="btn btn-primary" style="border-top-left-radius:0; border-bottom-left-radius:0">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -249,7 +249,7 @@
                         <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <div class="row">
                             <div class="col-lg-6 c-col-md-8">
-                                <a href="#" class="btn btn-sm btn-primary d-block d-md-block">Choose your Theme</a>
+                                <a href="#" class="btn btn-sm btn-primary d-block d-md-block btn-custom border-0">Choose your Theme</a>
                             </div>
                         </div>
                     </div>
@@ -265,7 +265,7 @@
                         <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <div class="row">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-sm btn-primary d-block">Order Now</a>
+                                <a href="#" class="btn btn-sm btn-primary d-block btn-custom border-0">Order Now</a>
                             </div>
                         </div>
                     </div>
@@ -281,7 +281,7 @@
                         <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <div class="row">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-sm btn-primary btn-block d-block">Order Now</a>
+                                <a href="#" class="btn btn-sm btn-primary btn-block d-block border-0 btn-custom">Order Now</a>
                             </div>
                         </div>
                     </div>
@@ -307,7 +307,7 @@
                         <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <div class="row">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-sm btn-primary btn-block d-block">See Review</a>
+                                <a href="#" class="btn btn-sm btn-primary btn-block d-block border-0 btn-custom">See Review</a>
                             </div>
                         </div>
                     </div>
@@ -323,7 +323,7 @@
                         <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <div class="row">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-sm btn-primary btn-block d-block">See Review</a>
+                                <a href="#" class="btn btn-sm btn-primary btn-block d-block btn-custom border-0">See Review</a>
                             </div>
                         </div>
                     </div>
@@ -339,7 +339,7 @@
                         <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <div class="row">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-sm btn-primary btn-block d-block">See Review</a>
+                                <a href="#" class="btn btn-sm btn-primary btn-block d-block btn-custom border-0">See Review</a>
                             </div>
                         </div>
                     </div>
