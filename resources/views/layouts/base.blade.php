@@ -7,7 +7,11 @@
     <title>Falcon Soft Ltd.</title>
     <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+     <!-- Styles -->
+     <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
     @livewireStyles
+
+       
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark theme-color" style="border-bottom: 4px solid #4C0DB5; padding-bottom: 0;">
@@ -32,25 +36,48 @@
                     @if(Route::has('login'))
                         @auth
                             @if(Auth::user()->u_type=='ADM')
-                                <li class="nav-item ">
-                                    <a href="{{route('admin.dashboard')}}" class="nav-link">Admin</a>
+                                <li class="nav-item dropdown">
+                                    <a href="{{route('admin.dashboard')}}" class="nav-link dropdown-toggle border rounded" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color:#070317 !important; padding:4px">
+                                        My Account    
+                                        <img src="{{asset('images/profile/default.png')}}" alt="User image float-start" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li>
+                                            <form action="{{route('logout')}}" method="post">
+                                                @csrf
+                                               
+                                                    <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
+                                               
+                                            </form>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <form action="{{route('logout')}}" method="post">
                                     @csrf
                                     <li class="nav-item">
-                                        <a href="{{route('logout')}}" class="nav-link" onclick="event.preventDefault();closest('form').submit();">logout</a>
+                                        <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
                                     </li>
                                 </form>
                             @else
-                                <li class="nav-item ">
-                                    <a href="{{route('user.dashboard')}}" class="nav-link">User</a>
+                                <li class="nav-item dropdown">
+                                    <a href="{{route('user.dashboard')}}" class="nav-link dropdown-toggle border rounded" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color:#070317 !important; padding:4px">
+                                        My Account    
+                                        <img src="{{asset('images/profile/default.png')}}" alt="User image float-start" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="{{route('user.profile')}}">Profile</a></li>
+                                        <li>
+                                            <form action="{{route('logout')}}" method="post">
+                                                @csrf
+                                                    <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
+                                               
+                                            </form>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <form action="{{route('logout')}}" method="post">
-                                    @csrf
-                                    <li class="nav-item">
-                                        <a href="{{route('logout')}}" class="nav-link" onclick="event.preventDefault();closest('form').submit();">logout</a>
-                                    </li>
-                                </form>
                             @endif
                         @else
                         <li class="nav-item ">
@@ -138,6 +165,13 @@
     <script src="{{asset('js/jQuery.js')}}"></script>
     <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('js/nav.js')}}"></script>
+        
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
+
+<!-- Alpine.js -->
+ <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    @stack('modals')
     @livewireScripts
 </body>
 </html>

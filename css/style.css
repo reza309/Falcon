@@ -163,7 +163,25 @@ fill: #FF9800;
 	border-top-left-radius: 0;
 	border-color: #4C0DB5 !important;
 }
-
+.panel.panel-default {
+	background-color: #000000a6;
+}
+.panel.panel-heading {
+	background-color: #11030387;
+	justify-content: center;
+	text-align: center;
+	border-bottom: 2px solid #822424;
+	margin-bottom: 1rem;
+}
+.profile-img {
+	width: 201px;
+	padding: 2rem;
+	border: 1px solid;
+	border-radius: 0.5rem;
+	border-inline: aliceblue;
+	margin-left: 0.5rem;
+	box-shadow: 2px 2px 3px 1px rgb(0, 0, 0);
+}
 
 
 /* small screen style */
