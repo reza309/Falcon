@@ -201,6 +201,7 @@ fill: #FF9800;
 		width: 96% !important;
 		height: auto;
 		margin-bottom: 1rem;
+		border-radius: 50%;
 	}
 	.carousel-container {
 		background-color: #000000c7;
