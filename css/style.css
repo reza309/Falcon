@@ -176,7 +176,7 @@ fill: #FF9800;
 	margin-bottom: 1rem;
 }
 .profile-img {
-	width: 201px;
+	width: auto;
 	padding: 2rem;
 	border: 1px solid;
 	border-radius: 0.5rem;
