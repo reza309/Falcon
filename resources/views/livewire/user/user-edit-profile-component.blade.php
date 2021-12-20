@@ -15,11 +15,11 @@
                         <div class="row">
                             <div class="col-lg-12 col-4">
                             @if($newimage)
-                            <img src="{{$newimage->temporaryUrl()}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0">
+                            <img src="{{$newimage->temporaryUrl()}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0 p-lg-4">
                             @elseif($images)
-                            <img src="{{asset('storage/app/profile')}}/{{$images}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0">
+                            <img src="{{asset('storage/app/profile')}}/{{$images}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0 p-lg-4">
                             @else
-                            <img src="{{asset('images/profile/default.png')}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0">
+                            <img src="{{asset('images/profile/default.png')}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0 p-lg-4">
                             @endif
                             </div>
                             <div class="col-lg-12 col-8">
