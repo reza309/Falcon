@@ -21,10 +21,68 @@
                     <div class="col-lg-2 col-12 col-md-2">
                         <img src="images/falcon-logo.png" alt="Falcon Soft Ltd." class="img img-fluid logo-header">
                         <!-- <img class="img img-fluid logo-header logo-nav" alt="Falcon Soft Ltd." src="images/falcon-logo.png"> -->
-                        <a class="menu-item login-left text-white d-none d-lg-block pt-lg-0" href="#">
+                        <!-- <a class="menu-item login-left text-white d-none d-lg-block pt-lg-0" href="#">
                             <i class="fas fa-user-alt"></i>
                             Login
-                        </a>
+                        </a> -->
+                        
+                            @if(Route::has('login'))
+                            @auth
+                                @if(Auth::user()->u_type=='ADM')
+                                    <div class="nav-item dropdown menu-item login-left text-white d-none d-lg-block pt-lg-0">
+                                        <a href="{{route('admin.dashboard')}}" class="nav-link dropdown-toggle border rounded" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color:#070317 !important; padding:4px">
+                                            My Account    
+                                            <img src="{{asset('images/profile/default.png')}}" alt="User image float-start" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                                            <li>
+                                                <form action="{{route('logout')}}" method="post">
+                                                    @csrf
+                                                
+                                                        <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
+                                                
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <form action="{{route('logout')}}" method="post">
+                                        @csrf
+                                        <li class="nav-item">
+                                            <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
+                                        </li>
+                                    </form>
+                                @else
+                                    <li class="nav-item dropdown mb-lg-0 mb-3">
+                                        <a href="{{route('user.dashboard')}}" class="nav-link dropdown-toggle border rounded" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color:#070317 !important; padding:4px">
+                                            My Account    
+                                            
+                                            @if($user->profile->images)
+                                            <img src="{{asset('storage/app/profile')}}/{{$user->profile->images}}" alt="Profile Image " class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                            @else
+                                            <img src="{{asset('images/profile/default.png')}}" alt="User image" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                            @endif
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="{{route('user.dashboard')}}">Dashboard</a></li>
+                                            <li><a class="dropdown-item" href="{{route('user.profile')}}">Profile</a></li>
+                                            <li>
+                                                <form action="{{route('logout')}}" method="post">
+                                                    @csrf
+                                                        <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
+                                                
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                @endif
+                            @else
+                            <li class="nav-item ">
+                                <a href="{{route('login')}}" class="nav-link">Login</a>
+                            </li>
+                            @endif
+                        @endif
                         <a class="menu-item login-left text-white d-block d-lg-none p-0 float-start" href="#">
                             <img src="images/falcon-logo.png" alt="Falcon Soft Ltd." class="img img-fluid sm-logo">
                         </a>

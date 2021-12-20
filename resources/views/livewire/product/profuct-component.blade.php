@@ -4,7 +4,7 @@
             <div class="intro">
                 <div class="row">
                     <div class="col-lg-3">
-                        <img class="img-fluid intro-logo d-none d-lg-block" alt="SOFTWARE SOLUTION TECHNOLOGIES" src="images/falcon-logo.png">
+                        <img class="img-fluid intro-logo d-none d-lg-block" alt="SOFTWARE SOLUTION TECHNOLOGIES" src="{{asset('images/falcon-logo.png')}}">
                     </div>
                     <div class="col-lg-9">
                         <p class="text-white intro-h ms-md-3"><span class="text-white font-weight-bolder">Simple</span> and
@@ -51,7 +51,7 @@
                 <div class="col-lg-4 mb-4 col-md-6 mb-md-3">
                     <div class="grid">
                         <div class="grid-inner">
-                            <img class="img-fluid" src="images/systems/e-commerce-tamplate.jpeg" alt="template">
+                            <img class="img-fluid" src="{{asset('images/systems/e-commerce-tamplate.jpeg')}}" alt="template">
                         </div>
                         <a href="tamplate/e-commerce/index.html" target="_blank" class="preview-btn"> 
                             <span class="preview-text">Preview</span>
@@ -62,7 +62,7 @@
                 <div class="col-lg-4 mb-4 col-md-6 mb-md-3">
                     <div class="grid">
                         <div class="grid-inner">
-                            <img class="img-fluid" src="images/systems/bg-2.png" alt="template">
+                            <img class="img-fluid" src="{{asset('images/systems/bg-2.png')}}" alt="template">
                         </div>
                         <a href="#demo-1" target="_blank" class="preview-btn"> <span
                                 class="preview-text">Preview</span></a>
@@ -72,7 +72,7 @@
                 <div class="col-lg-4">
                     <div class="grid">
                         <div class="grid-inner">
-                            <img class="img-fluid" src="images/systems/bg.png" alt="template">
+                            <img class="img-fluid" src="{{asset('images/systems/bg.png')}}" alt="template">
                         </div>
                         <a href="#demo-1" target="_blank" class="preview-btn"> <span
                                 class="preview-text">Preview</span></a>
