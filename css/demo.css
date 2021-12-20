@@ -458,6 +458,11 @@ header {
 	}
 }
 @media screen and (max-width:570px) {
+	.bg-container {
+		background-image: url(images/systems/pro-bg.jpg);
+		background-size: cover;
+		background-position: initial;
+	}
 	.menu-container {
 		float: unset;
 		/* display: block; */
