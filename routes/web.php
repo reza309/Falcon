@@ -4,7 +4,7 @@ use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\User\UserProfileComponent;
 use App\Http\Livewire\User\UserEditProfileComponent;
-use App\Http\Livewire\Product\ProductComponent;
+use App\Http\Livewire\Product\ProfuctComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/',HomeComponent::class)->name('main.home');
-Route::get('/products',ProductComponent::class)->name('main.products');
+Route::get('/products',ProfuctComponent::class)->name('main.products');
 
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
