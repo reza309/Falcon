@@ -7,9 +7,9 @@
             <div class="row">
                 <div class="col-lg-4">
                     @if($user->profile->images)
-                    <img src="{{asset('storage/app/profile')}}/{{$user->profile->images}}" alt="Profile Image " class="img img-fluid profile-img me-lg-0 me-1">
+                    <img src="{{asset('storage/app/profile')}}/{{$user->profile->images}}" alt="Profile Image " class="img img-fluid profile-img me-lg-0 me-1 p-0">
                     @else
-                    <img src="{{asset('images/profile/default.png')}}" alt="Profile Image" class="img img-fluid profile-img me-lg-0 me-1">
+                    <img src="{{asset('images/profile/default.png')}}" alt="Profile Image" class="img img-fluid profile-img me-lg-0 me-1 p-0">
                     @endif
                 </div>
                 <div class="col-lg-8">

@@ -12,15 +12,21 @@
             <form wire:submit.prevent="updateProfile">
                 <div class="row">
                     <div class="col-lg-4">
-                        @if($newimage)
-                        <img src="{{$newimage->temporaryUrl()}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3">
-                        @elseif($images)
-                        <img src="{{asset('storage/app/profile')}}/{{$images}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3">
-                        @else
-                        <img src="{{asset('images/profile/default.png')}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3">
-                        @endif
-                        <div class="p-lg-3 mt-3">
-                        <input type="file" class="form-control" wire:model="newimage">
+                        <div class="row">
+                            <div class="col-lg-12 col-4">
+                            @if($newimage)
+                            <img src="{{$newimage->temporaryUrl()}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0">
+                            @elseif($images)
+                            <img src="{{asset('storage/app/profile')}}/{{$images}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0">
+                            @else
+                            <img src="{{asset('images/profile/default.png')}}" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0">
+                            @endif
+                            </div>
+                            <div class="col-lg-12 col-8">
+                                <div class="p-lg-3 mt-3">
+                                    <input type="file" class="form-control" wire:model="newimage">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-8">
