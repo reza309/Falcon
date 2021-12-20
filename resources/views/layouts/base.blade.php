@@ -66,9 +66,9 @@
                                         My Account    
                                         
                                         @if($user->profile->images)
-                                        <img src="{{asset('storage/app/profile')}}/{{$user->profile->images}}" alt="Profile Image " class="img img-fluid profile-img me-lg-0 me-1 p-0" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                        <img src="{{asset('storage/app/profile')}}/{{$user->profile->images}}" alt="Profile Image " class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
                                         @else
-                                        <img src="{{asset('images/profile/default.png')}}" alt="User image float-start" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                        <img src="{{asset('images/profile/default.png')}}" alt="User image" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
                                         @endif
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
