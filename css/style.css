@@ -176,13 +176,14 @@ fill: #FF9800;
 	margin-bottom: 1rem;
 }
 .profile-img {
-	width: auto;
+	width: 91%;
 	padding: 2rem;
 	border: 1px solid;
 	border-radius: 0.5rem;
 	border-inline: aliceblue;
 	margin-left: 0.5rem;
 	box-shadow: 2px 2px 3px 1px rgb(0, 0, 0);
+	/* margin-left: 0 !important; */
 }
 
 
