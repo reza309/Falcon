@@ -29,7 +29,7 @@
                             @if(Route::has('login'))
                             @auth
                                 @if(Auth::user()->u_type=='ADM')
-                                    <div class="nav-item dropdown menu-item login-left text-white d-none d-lg-block pt-lg-0">
+                                    <div class="dropdown menu-item login-left text-white d-none d-lg-block pt-lg-0">
                                         <a href="{{route('admin.dashboard')}}" class="nav-link dropdown-toggle border rounded" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color:#070317 !important; padding:4px">
                                             My Account    
                                             <img src="{{asset('images/profile/default.png')}}" alt="User image float-start" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
