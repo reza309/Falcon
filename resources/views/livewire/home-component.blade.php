@@ -16,7 +16,7 @@
                                 <div class="p-lg-4 ps-sm-3">
                                     <h1 class="text-white-50">It`s Time to create your business website!</h1>
                                     <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <a href="http://" class="btn btn-custom btn-sm btn-primary border-0 btn-custom d-block">Are you Ready?</a>
+                                    <a href="http://" class="btn btn-custom btn-sm btn-primary border-0 btn-custom">Are you Ready?</a>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +248,7 @@
                         </div>
                         <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <div class="row">
-                            <div class="col-lg-6 c-col-md-8">
+                            <div class="col-lg-6 c-col-md-8 col-lg-12">
                                 <a href="#" class="btn btn-sm btn-primary d-block d-md-block btn-custom border-0">Choose your Theme</a>
                             </div>
                         </div>
