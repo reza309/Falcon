@@ -195,6 +195,11 @@ fill: #FF9800;
 		opacity: 0;
 		
 	}
+	.carousel-container {
+		background-color: #000000c7;
+		z-index: 1;
+		position: relative;
+	}
 	.rec {
 		width: 79px;
 		height: 79px;
