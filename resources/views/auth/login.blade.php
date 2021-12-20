@@ -35,15 +35,20 @@
                 </div>
 
                 <div class="flex items-center justify-end mt-4">
-                    @if (Route::has('password.request'))
-                        <a class="underline text-sm text-gray-600 hover:text-gray-900 text-white-50" href="{{ route('password.request') }}">
-                            {{ __('Forgot your password?') }}
-                        </a>
-                    @endif
-
-                    <x-jet-button class="ml-4 btn btn-primary btn-custom border-0">
-                        {{ __('Log in') }}
-                    </x-jet-button>
+                    <div class="row">
+                        <div class="col-lg-6">
+                        @if (Route::has('password.request'))
+                            <a class="underline text-sm text-gray-600 hover:text-gray-900 text-white-50" href="{{ route('password.request') }}">
+                                {{ __('Forgot your password?') }}
+                            </a>
+                        @endif
+                        </div>
+                        <div class="col-lg-6">
+                        <x-jet-button class="ml-4 btn btn-primary btn-custom border-0">
+                            {{ __('Log in') }}
+                        </x-jet-button>
+                        </div>
+                    </div>
                 </div>
                 <div class="block mt-4">
                 <a href="{{route('register')}}" class="text-white-50">New user? Registration Now.</a>
