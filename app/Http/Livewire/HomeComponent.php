@@ -10,7 +10,11 @@ class HomeComponent extends Component
 {
     public function render()
     {
-        $user = User::find(Auth::user()->id);
+        $user = null;
+        if(Auth::check()){
+            $user = User::find(Auth::user()->id);
+        }
+        
         return view('livewire.home-component')->layout('layouts.base',['user'=>$user]);
     }
 }

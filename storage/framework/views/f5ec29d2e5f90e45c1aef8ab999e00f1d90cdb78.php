@@ -7,9 +7,9 @@
             <div class="row">
                 <div class="col-lg-4">
                     <?php if($user->profile->images): ?>
-                    <img src="<?php echo e(asset('storage/app/profile')); ?>/<?php echo e($user->profile->images); ?>" alt="Profile Image " class="img img-fluid profile-img">
+                    <img src="<?php echo e(asset('storage/app/profile')); ?>/<?php echo e($user->profile->images); ?>" alt="Profile Image " class="img img-fluid profile-img me-lg-0 me-1 p-0">
                     <?php else: ?>
-                    <img src="<?php echo e(asset('images/profile/default.png')); ?>" alt="Profile Image" class="img img-fluid profile-img">
+                    <img src="<?php echo e(asset('images/profile/default.png')); ?>" alt="Profile Image" class="img img-fluid profile-img me-lg-0 me-1 p-0">
                     <?php endif; ?>
                 </div>
                 <div class="col-lg-8">
@@ -32,7 +32,7 @@
                                 <tr>
                                     <th>Phone</th>
                                     <th>:</th>
-                                    <td><?php echo e($user->profile->phone); ?></td>
+                                    <td><?php echo e($user->profile->mobile); ?></td>
                                 </tr>
                             </table>
                         </li>

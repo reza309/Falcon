@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SS Home Page</title>
     <!-- Bootstrap -->
-    <link href="{{asset('bootstrap/css/bootstrap.css')}}" rel="stylesheet">
-    <link href="{{asset('css/demo.css')}}" rel="stylesheet">
-    <link href="{{asset('tools/fontawesome-free-5.12.0-web/css/all.min.css')}}" rel="stylesheet">
-    @livewireStyles
+    <link href="<?php echo e(asset('bootstrap/css/bootstrap.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('css/demo.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('tools/fontawesome-free-5.12.0-web/css/all.min.css')); ?>" rel="stylesheet">
+    <?php echo \Livewire\Livewire::styles(); ?>
+
 </head>
 
 <body>
@@ -26,66 +27,66 @@
                             Login
                         </a> -->
                         
-                            @if(Route::has('login'))
-                            @auth
-                                @if(Auth::user()->u_type=='ADM')
+                            <?php if(Route::has('login')): ?>
+                            <?php if(auth()->guard()->check()): ?>
+                                <?php if(Auth::user()->u_type=='ADM'): ?>
                                     <div class="dropdown menu-item login-left text-white d-none d-lg-block pt-lg-0">
-                                        <a href="{{route('admin.dashboard')}}" class="dropdown-toggle border rounded" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color:#070317 !important; padding:4px">
+                                        <a href="<?php echo e(route('admin.dashboard')); ?>" class="dropdown-toggle border rounded" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color:#070317 !important; padding:4px">
                                             My Account    
-                                            <img src="{{asset('images/profile/default.png')}}" alt="User image float-start" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                            <img src="<?php echo e(asset('images/profile/default.png')); ?>" alt="User image float-start" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                             <li><a class="dropdown-item" href="#">Dashboard</a></li>
                                             <li><a class="dropdown-item" href="#">Profile</a></li>
                                             <li>
-                                                <form action="{{route('logout')}}" method="post">
-                                                    @csrf
+                                                <form action="<?php echo e(route('logout')); ?>" method="post">
+                                                    <?php echo csrf_field(); ?>
                                                 
-                                                        <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
+                                                        <a href="<?php echo e(route('logout')); ?>" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
                                                 
                                                 </form>
                                             </li>
                                         </ul>
                                     </div>
-                                    <form action="{{route('logout')}}" method="post">
-                                        @csrf
+                                    <form action="<?php echo e(route('logout')); ?>" method="post">
+                                        <?php echo csrf_field(); ?>
                                         <div class="">
-                                            <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
+                                            <a href="<?php echo e(route('logout')); ?>" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
                                         </div>
                                     </form>
-                                @else
+                                <?php else: ?>
                                     <div class="dropdown menu-item login-left text-white d-none d-lg-block pt-lg-0">
-                                        <a href="{{route('user.dashboard')}}" class="dropdown-toggle border rounded text-decoration-none text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color:#070317 !important; padding:12px">
+                                        <a href="<?php echo e(route('user.dashboard')); ?>" class="dropdown-toggle border rounded text-decoration-none text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color:#070317 !important; padding:12px">
                                             My Account    
                                             
-                                            @if($user->profile->images)
-                                            <img src="{{asset('storage/app/profile')}}/{{$user->profile->images}}" alt="Profile Image " class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
-                                            @else
-                                            <img src="{{asset('images/profile/default.png')}}" alt="User image" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
-                                            @endif
+                                            <?php if($user->profile->images): ?>
+                                            <img src="<?php echo e(asset('storage/app/profile')); ?>/<?php echo e($user->profile->images); ?>" alt="Profile Image " class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                            <?php else: ?>
+                                            <img src="<?php echo e(asset('images/profile/default.png')); ?>" alt="User image" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                            <?php endif; ?>
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="{{route('user.dashboard')}}">Dashboard</a></li>
-                                            <li><a class="dropdown-item" href="{{route('user.profile')}}">Profile</a></li>
+                                            <li><a class="dropdown-item" href="<?php echo e(route('user.dashboard')); ?>">Dashboard</a></li>
+                                            <li><a class="dropdown-item" href="<?php echo e(route('user.profile')); ?>">Profile</a></li>
                                             <li>
-                                                <form action="{{route('logout')}}" method="post">
-                                                    @csrf
-                                                        <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
+                                                <form action="<?php echo e(route('logout')); ?>" method="post">
+                                                    <?php echo csrf_field(); ?>
+                                                        <a href="<?php echo e(route('logout')); ?>" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
                                                 
                                                 </form>
                                             </li>
                                         </ul>
                                     </div>
-                                @endif
-                            @else
+                                <?php endif; ?>
+                            <?php else: ?>
                             <div class="dropdown menu-item login-left text-white d-none d-lg-block pt-lg-0">
-                                <a href="{{route('login')}}" class="text-white text-decoration-none">
+                                <a href="<?php echo e(route('login')); ?>" class="text-white text-decoration-none">
                                 <i class="fas fa-user-alt"></i>
                                     Login
                                 </a>
                             </div>
-                            @endif
-                        @endif
+                            <?php endif; ?>
+                        <?php endif; ?>
                         <a class="menu-item login-left text-white d-block d-lg-none p-0 float-start" href="#">
                             <img src="images/falcon-logo.png" alt="Falcon Soft Ltd." class="img img-fluid sm-logo">
                         </a>
@@ -113,7 +114,8 @@
             <!-- ending nav section -->
         </header>
     </section>
-    {{$slot}}
+    <?php echo e($slot); ?>
+
      <!-- start footer section -->
      <footer class="footer-demo mt-lg-3">
         <div class="container-fluid">
@@ -168,15 +170,16 @@
         </div>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{asset('js/jQuery.js')}}"></script>
-    <script src="{{asset('bootstrap/js/bootstrap.bundle.js')}}"></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{asset('tools/fontawesome-free-5.12.0-web/js/all.min.js')}}"></script>
-    <script src="{{asset('js/nav.js')}}"></script>
-    <script src="{{asset('js/demo.js')}}"></script>
-    <script src="{{asset('js/preview.js')}}"></script>
+    <script src="<?php echo e(asset('js/jQuery.js')); ?>"></script>
+    <script src="<?php echo e(asset('bootstrap/js/bootstrap.bundle.js')); ?>"></script>
+    <script src="<?php echo e(asset('js/app.js')); ?>" defer></script>
+    <script src="<?php echo e(asset('tools/fontawesome-free-5.12.0-web/js/all.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('js/nav.js')); ?>"></script>
+    <script src="<?php echo e(asset('js/demo.js')); ?>"></script>
+    <script src="<?php echo e(asset('js/preview.js')); ?>"></script>
     
-    @livewireScripts
+    <?php echo \Livewire\Livewire::scripts(); ?>
+
 </body>
 
-</html>
+</html><?php /**PATH C:\xampp\htdocs\falcon\resources\views/layouts/product.blade.php ENDPATH**/ ?>

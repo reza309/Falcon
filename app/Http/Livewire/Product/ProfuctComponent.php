@@ -11,7 +11,10 @@ class ProfuctComponent extends Component
     public function render()
     {
         
-        $user = User::find(Auth::user()->id);
+        $user = null;
+        if(Auth::check()){
+            $user = User::find(Auth::user()->id);
+        }
         return view('livewire.product.profuct-component')->layout('layouts.product',['user'=>$user]);
     }
 }

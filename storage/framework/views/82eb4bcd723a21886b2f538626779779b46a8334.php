@@ -29,7 +29,7 @@
                         <a href="<?php echo e(route('main.home')); ?>" class="nav-link custom-active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="demo.html" class="nav-link">Products</a>
+                        <a href="<?php echo e(route('home.products')); ?>" class="nav-link">Products</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">About</a>
@@ -62,13 +62,18 @@
                                     </li>
                                 </form>
                             <?php else: ?>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown mb-lg-0 mb-3">
                                     <a href="<?php echo e(route('user.dashboard')); ?>" class="nav-link dropdown-toggle border rounded" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color:#070317 !important; padding:4px">
                                         My Account    
-                                        <img src="<?php echo e(asset('images/profile/default.png')); ?>" alt="User image float-start" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                        
+                                        <?php if($user->profile->images): ?>
+                                        <img src="<?php echo e(asset('storage/app/profile')); ?>/<?php echo e($user->profile->images); ?>" alt="Profile Image " class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                        <?php else: ?>
+                                        <img src="<?php echo e(asset('images/profile/default.png')); ?>" alt="User image" class="img img-fluid rounded-circle" style="width:32px; height:32px; border:1px solid; padding:3px">
+                                        <?php endif; ?>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="<?php echo e(route('user.dashboard')); ?>">Dashboard</a></li>
                                         <li><a class="dropdown-item" href="<?php echo e(route('user.profile')); ?>">Profile</a></li>
                                         <li>
                                             <form action="<?php echo e(route('logout')); ?>" method="post">
