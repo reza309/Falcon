@@ -8,6 +8,7 @@ class ProfuctComponent extends Component
 {
     public function render()
     {
-        return view('livewire.product.profuct-component')->layout('layouts.product');
+        $user = User::find(Auth::user()->id);
+        return view('livewire.product.profuct-component')->layout('layouts.product',['user'=>$user]);
     }
 }
