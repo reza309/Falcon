@@ -110,7 +110,7 @@
                                 </table>
                             </li>
                             <li class="list-group-item">
-                                <input type="submit" value="Save" class="btn btn-primary btn-custom border-0 pe-lg-5 ps-lg-5 float-end">
+                                <input type="submit" value="Save" class="btn btn-primary btn-custom border-0 pe-lg-5 ps-lg-5 float-end w-lg-auto w-100">
                                 <div class="clearfix"></div>
                             </li>
                         </ul>
