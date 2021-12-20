@@ -186,6 +186,15 @@ fill: #FF9800;
 
 /* small screen style */
 @media screen and (max-width: 570px) {
+	.custom-slide > .c-c-item {
+		width: 100%;
+		height: 100%;
+		background-size: contain;
+		position: absolute;
+		animation: c_slide 25s infinite;
+		opacity: 0;
+		/* background-image: url('images/galaxi-tech.jpg'); */
+	}
 	.rec {
 		width: 79px;
 		height: 79px;
