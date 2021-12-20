@@ -47,6 +47,7 @@
                         <x-jet-button class="btn btn-primary btn-custom border-0 w-100 w-lg-auto float-lg-end mt-lg-0 mt-3">
                             {{ __('Log in') }}
                         </x-jet-button>
+                        <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>

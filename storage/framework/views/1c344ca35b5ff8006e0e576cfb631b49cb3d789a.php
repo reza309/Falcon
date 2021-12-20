@@ -122,28 +122,34 @@
                     </label>
                 </div>
 
-                <div class="flex items-center justify-end mt-4">
-                    <?php if(Route::has('password.request')): ?>
-                        <a class="underline text-sm text-gray-600 hover:text-gray-900 text-white-50" href="<?php echo e(route('password.request')); ?>">
-                            <?php echo e(__('Forgot your password?')); ?>
+                <div class="mt-4">
+                    <div class="row">
+                        <div class="col-lg-6">
+                        <?php if(Route::has('password.request')): ?>
+                            <a class="underline text-sm text-gray-600 hover:text-gray-900 text-white-50" href="<?php echo e(route('password.request')); ?>">
+                                <?php echo e(__('Forgot your password?')); ?>
 
-                        </a>
-                    <?php endif; ?>
-
-                    <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
-<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'jetstream::components.button','data' => ['class' => 'ml-4 btn btn-primary btn-custom border-0']]); ?>
+                            </a>
+                        <?php endif; ?>
+                        </div>
+                        <div class="col-lg-6">
+                        <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
+<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'jetstream::components.button','data' => ['class' => 'btn btn-primary btn-custom border-0 w-100 w-lg-auto float-lg-end mt-lg-0 mt-3']]); ?>
 <?php $component->withName('jet-button'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php $component->withAttributes(['class' => 'ml-4 btn btn-primary btn-custom border-0']); ?>
-                        <?php echo e(__('Log in')); ?>
+<?php $component->withAttributes(['class' => 'btn btn-primary btn-custom border-0 w-100 w-lg-auto float-lg-end mt-lg-0 mt-3']); ?>
+                            <?php echo e(__('Log in')); ?>
 
-                     <?php echo $__env->renderComponent(); ?>
+                         <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
 <?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
 <?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
 <?php endif; ?>
+                        <div class="clearfix"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="block mt-4">
                 <a href="<?php echo e(route('register')); ?>" class="text-white-50">New user? Registration Now.</a>
