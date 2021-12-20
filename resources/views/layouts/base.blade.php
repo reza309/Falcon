@@ -28,7 +28,7 @@
                         <a href="{{route('main.home')}}" class="nav-link custom-active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{asset('main.products')}}" class="nav-link">Products</a>
+                        <a href="{{route('home.products')}}" class="nav-link">Products</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">About</a>

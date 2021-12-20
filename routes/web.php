@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/',HomeComponent::class)->name('main.home');
-Route::get('/products',ProfuctComponent::class)->name('main.products');
+Route::get('/products',ProfuctComponent::class)->name('home.products');
 
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
