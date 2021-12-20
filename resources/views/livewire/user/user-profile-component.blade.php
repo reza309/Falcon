@@ -32,7 +32,7 @@
                                 <tr>
                                     <th>Phone</th>
                                     <th>:</th>
-                                    <td>{{$user->profile->phone}}</td>
+                                    <td>{{$user->profile->mobile}}</td>
                                 </tr>
                             </table>
                         </li>
