@@ -203,6 +203,9 @@ fill: #FF9800;
 		flex: 0 0 auto;
 		width: 100% !important;
 	}
+	.min-h-screen {
+		min-height: auto !important;
+	}
 	.img.img-fluid.profile-img {
 		width: 96% !important;
 		height: auto;
