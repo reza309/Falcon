@@ -1,5 +1,5 @@
 <!-- intro section -->
-<div class="bg-container">
+<div class="bg-container" style="background-image: url({{asset('../images/systems/pro-bg.jpg')}});">
         <div class="intro-container">
             <div class="intro">
                 <div class="row">
