@@ -109,12 +109,12 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jQuery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="tools/fontawesome-free-5.12.0-web/js/all.min.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/demo.js"></script>
-    <script src="js/preview.js"></script>
+    <script src="{{asset('js/popper.min.js')}}"></script>
+    <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('tools/fontawesome-free-5.12.0-web/js/all.min.js')}}"></script>
+    <script src="{{asset('js/nav.js')}}"></script>
+    <script src="{{asset('js/demo.js')}}"></script>
+    <script src="{{asset('js/preview.js')}}"></script>
     @livewireScripts
 </body>
 
