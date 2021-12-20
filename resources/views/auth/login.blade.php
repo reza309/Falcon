@@ -34,7 +34,7 @@
                     </label>
                 </div>
 
-                <div class="container-fluid mt-4">
+                <div class="mt-4">
                     <div class="row">
                         <div class="col-lg-6">
                         @if (Route::has('password.request'))
