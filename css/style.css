@@ -193,7 +193,7 @@ fill: #FF9800;
 		position: absolute;
 		animation: c_slide 25s infinite;
 		opacity: 0;
-		/* background-image: url('images/galaxi-tech.jpg'); */
+		
 	}
 	.rec {
 		width: 79px;
