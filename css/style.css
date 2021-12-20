@@ -74,9 +74,11 @@
 /* carousel logo */
 .carousel-logo {
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	right: 5px;
-	width: 198px;
+	width: 195px;
+	border-radius: 15rem;
+	background: black;
 }
 /* carousel logo end */
 /* bootstrap carousel container */
