@@ -44,7 +44,7 @@
                         @endif
                         </div>
                         <div class="col-lg-6">
-                        <x-jet-button class="ml-4 btn btn-primary btn-custom border-0">
+                        <x-jet-button class="btn btn-primary btn-custom border-0 w-100 w-lg-auto float-lg-end">
                             {{ __('Log in') }}
                         </x-jet-button>
                         </div>
