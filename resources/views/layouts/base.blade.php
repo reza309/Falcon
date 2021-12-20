@@ -72,7 +72,7 @@
                                         @endif
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="{{route('user.dashboard')}}">Dashboard</a></li>
                                         <li><a class="dropdown-item" href="{{route('user.profile')}}">Profile</a></li>
                                         <li>
                                             <form action="{{route('logout')}}" method="post">
