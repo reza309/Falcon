@@ -197,6 +197,10 @@ fill: #FF9800;
 		opacity: 0;
 		
 	}
+	.img.img-fluid.profile-img {
+		width: auto !important;
+		height: auto;
+	}
 	.carousel-container {
 		background-color: #000000c7;
 		z-index: 1;
