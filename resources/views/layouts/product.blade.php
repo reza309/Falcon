@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SS Home Page</title>
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="css/demo.css" rel="stylesheet">
-    <link href="tools/fontawesome-free-5.12.0-web/css/all.min.css" rel="stylesheet">
+    <link href="{{asset('bootstrap/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{asset('css/demo.css')}}" rel="stylesheet">
+    <link href="{{asset('tools/fontawesome-free-5.12.0-web/css/all.min.css')}}" rel="stylesheet">
     @livewireStyles
 </head>
 
