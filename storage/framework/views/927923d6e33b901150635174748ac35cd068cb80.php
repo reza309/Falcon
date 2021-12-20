@@ -96,7 +96,7 @@
                     </div>
                     <div class="col-lg-10 col-12 col-md-10">
                         <div class="menu-container pt-3 mb-3 p-lg-0 p-3 p-md-0">
-                            <a class="menu-item menue-sm me-3" href="index.html">
+                            <a class="menu-item menue-sm me-3" href="<?php echo e(route('main.home')); ?>">
                                 Home
                             </a>
                             <a class="menu-item menue-sm me-3 mb-3 active" href="#">Demos</a>

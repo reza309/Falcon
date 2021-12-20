@@ -61,6 +61,37 @@
                             <span class="preview-text">Preview</span>
                         </a>
                     </div>
+                    <div class="grit-bottom ps-lg-1 pt-lg-2 pb-lg-2 pe-lg-1 p-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-6">
+                            <a href="" class="text-white-50 text-decoration-none"><small>Falcon Commerce</small></a>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-4">
+                            <b class="text-white-50">Price : </b><span class="text-white-50"><i class="fas fa-dollar-sign"></i> 5</span>
+                            </div>
+                            <div class="col-lg-4 col-4">
+                                <small class="text-white-50">
+                                    <del><i class="fas fa-dollar-sign"></i> 7</del>
+                                    &lang;Off. 2 &#37;&rang;
+                                </small>
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <a href="#" class="btn btn-sm btn-primary btn-custom border-0 w-100 mt-2">
+                                    Buy Now 
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- ending first col -->
                 <div class="col-lg-4 mb-4 col-md-6 mb-md-3">
@@ -68,8 +99,41 @@
                         <div class="grid-inner">
                             <img class="img-fluid" src="<?php echo e(asset('images/systems/bg-2.png')); ?>" alt="template">
                         </div>
-                        <a href="#demo-1" target="_blank" class="preview-btn"> <span
-                                class="preview-text">Preview</span></a>
+
+                        <a href="#demo-1" target="_blank" class="preview-btn"> 
+                            <span class="preview-text">Preview</span>
+                        </a>
+                    </div>
+                    <div class="grit-bottom ps-lg-1 pt-lg-2 pb-lg-2 pe-lg-1 p-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-6">
+                            <a href="" class="text-white-50 text-decoration-none"><small>Falcon Commerce</small></a>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-4">
+                            <b class="text-white-50">Price : </b><span class="text-white-50"><i class="fas fa-dollar-sign"></i> 5</span>
+                            </div>
+                            <div class="col-lg-4 col-4">
+                                <small class="text-white-50">
+                                    <del><i class="fas fa-dollar-sign"></i> 7</del>
+                                    &lang;Off. 2 &#37;&rang;
+                                </small>
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <a href="#" class="btn btn-sm btn-primary btn-custom w-100 mt-2 border-0">
+                                    Buy Now 
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- ending second col -->
@@ -80,6 +144,37 @@
                         </div>
                         <a href="#demo-1" target="_blank" class="preview-btn"> <span
                                 class="preview-text">Preview</span></a>
+                    </div>
+                    <div class="grit-bottom ps-lg-1 pt-lg-2 pb-lg-2 pe-lg-1 p-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-6">
+                            <a href="" class="text-white-50 text-decoration-none"><small>Falcon Commerce</small></a>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-4">
+                            <b class="text-white-50">Price : </b><span class="text-white-50"><i class="fas fa-dollar-sign"></i> 5</span>
+                            </div>
+                            <div class="col-lg-4 col-4">
+                                <small class="text-white-50">
+                                    <del><i class="fas fa-dollar-sign"></i> 7</del>
+                                    &lang;Off. 2 &#37;&rang;
+                                </small>
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <a href="#" class="btn btn-sm btn-primary btn-custom border-0 w-100 mt-2">
+                                    Buy Now 
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- ending third col -->
@@ -101,6 +196,37 @@
                         <a href="#demo-1" target="_blank" class="preview-btn"> <span
                                 class="preview-text">Preview</span></a>
                     </div>
+                    <div class="grit-bottom ps-lg-1 pt-lg-2 pb-lg-2 pe-lg-1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                            <a href="" class="text-white-50 text-decoration-none"><small>Falcon Commerce</small></a>
+                            </div>
+                            <div class="col-lg-6">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                            <b class="text-white-50">Price : </b><span class="text-white-50"><i class="fas fa-dollar-sign"></i> 5</span>
+                            </div>
+                            <div class="col-lg-4">
+                                <small class="text-white-50">
+                                    <del><i class="fas fa-dollar-sign"></i> 7</del>
+                                    &lang;Off. 2 &#37;&rang;
+                                </small>
+                            </div>
+                            <div class="col-lg-12">
+                                <a href="#" class="btn btn-sm btn-primary btn-custom w-100 mt-2 border-0">
+                                    Buy Now 
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- ending first col -->
                 <div class="col-lg-4 pb-4 pb-lg-0 pb-md-0 mb-md-3">
@@ -112,6 +238,37 @@
                             <span class="preview-text">Preview</span>
                         </a>
                     </div>
+                    <div class="grit-bottom ps-lg-1 pt-lg-2 pb-lg-2 pe-lg-1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                            <a href="" class="text-white-50 text-decoration-none"><small>Falcon Commerce</small></a>
+                            </div>
+                            <div class="col-lg-6">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                            <b class="text-white-50">Price : </b><span class="text-white-50"><i class="fas fa-dollar-sign"></i> 5</span>
+                            </div>
+                            <div class="col-lg-4">
+                                <small class="text-white-50">
+                                    <del><i class="fas fa-dollar-sign"></i> 7</del>
+                                    &lang;Off. 2 &#37;&rang;
+                                </small>
+                            </div>
+                            <div class="col-lg-12">
+                                <a href="#" class="btn btn-sm btn-primary btn-custom w-100 mt-2 border-0">
+                                    Buy Now 
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- ending second col -->
                 <div class="col-lg-4 pb-4 p-lg-0 pb-md-0">
@@ -121,6 +278,37 @@
                         </div>
                         <a href="#demo-1" target="_blank" class="preview-btn"> <span
                                 class="preview-text">Preview</span></a>
+                    </div>
+                    <div class="grit-bottom ps-lg-1 pt-lg-2 pb-lg-2 pe-lg-1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                            <a href="" class="text-white-50 text-decoration-none"><small>Falcon Commerce</small></a>
+                            </div>
+                            <div class="col-lg-6">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                            <b class="text-white-50">Price : </b><span class="text-white-50"><i class="fas fa-dollar-sign"></i> 5</span>
+                            </div>
+                            <div class="col-lg-4">
+                                <small class="text-white-50">
+                                    <del><i class="fas fa-dollar-sign"></i> 7</del>
+                                    &lang;Off. 2 &#37;&rang;
+                                </small>
+                            </div>
+                            <div class="col-lg-12">
+                                <a href="#" class="btn btn-sm btn-primary btn-custom w-100 mt-2 border-0">
+                                    Buy Now 
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- ending third col -->

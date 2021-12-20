@@ -15,7 +15,10 @@
                             <div class="col-lg-6 col-md-8 col-sm-8 col-12">
                                 <div class="p-lg-4 ps-sm-3">
                                     <h1 class="text-white-50">It`s Time to create your business website!</h1>
-                                    <p class="text-white-50" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="text-white-50" style="text-align: justify;">
+                                        If your business has gotten this far without a website, you might be wondering: do I need a website for my business? What’s the point if my business is already successful without one?
+                                        The short answer is that there has never been a better or more important time to invest in a website for your business. A website offers a wide variety of benefits for small businesses, and most of these benefits increase in value exponentially year over year, just like the Internet itself.
+                                    </p>
                                     <a href="http://" class="btn btn-custom btn-sm btn-primary border-0 btn-custom">Are you Ready?</a>
                                 </div>
                             </div>

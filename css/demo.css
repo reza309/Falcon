@@ -335,6 +335,14 @@ header {
 .demo-search {
 	padding-left: 6rem;
 }
+.grit-bottom {
+	background-color: #0C0929;
+	box-sizing: border-box;
+	border: none;
+}
+.btn-custom {
+	background-color: #4C0DB5;
+}
 @media screen and (max-width:810px) {
 	.menu-container {
 		/* float: unset; */
