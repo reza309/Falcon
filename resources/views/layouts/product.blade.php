@@ -218,6 +218,13 @@
   });
     </script>
     <script src="{{asset('js/preview.js')}}"></script>
+    <script>
+    $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $("#myToast").toast("show");
+        });
+    });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     @stack('modals')
