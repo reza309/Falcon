@@ -1,14 +1,37 @@
 
 <!-- intro section -->
-<!-- <div class="bg-container" style="background-image: url(<?php echo e(asset('images/systems/pro-bg.jpg')); ?>);"> -->
-    <!-- <div class="container-fluid intro-container">  -->
-        <!-- <div class=""> -->
-            <!-- <div class=""> -->
-                <!-- <div class="intro"> -->
-                    
-                <!-- </div> -->
+<div class="bg-container" style="background-image: url(<?php echo e(asset('images/systems/pro-bg.jpg')); ?>);">
+    <div class="container-fluid intro-container"> 
+        <div class="">
+            <div class="">
+                <div class="intro">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="img-fluid intro-logo d-none d-lg-block" alt="SOFTWARE SOLUTION TECHNOLOGIES" src="<?php echo e(asset('images/falcon-logo.png')); ?>">
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="text-white intro-h ms-md-3"><span class="text-white font-weight-bolder">Simple</span> and
+                                <span class="font-weight-bolder">Smart</span>
+                            </p>
+                            <p class="text-white intro-text ms-md-3">Web and Android application</p>
+                            <div class="container text-center pt-lg-4 pt-0 p-0 d-flex d-lg-block mb-3 top-btn-bgroup">
+                                <button class="btn btn-lg rounded-pill">VIEW DEMOS</button>
+                                <button class="btn btn-lg btn-buy btn-primary rounded-pill">BUY NOW</button>
+                            </div>
+                            <div class="container search-container p-0">
+                                <form action="#black" method="post" class="d-flex demo-search">
+                                    <input type="search" name="search" class="search-field">
+                                    <button type="submit" class="serch-btn bg-success">
+                                        <i class="fas fa-search text-white"></i>
+                                    </button>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- container -->
-                <!-- <div class="container">
+                <div class="container">
                     <div class="down-option">
                         <i class="fas fa-angle-down"></i>
                     </div>
@@ -18,11 +41,11 @@
                     <div class="down-option">
                         <i class="fas fa-angle-down"></i>
                     </div>
-                </div> ending down container fluid -->
-            <!-- </div> intro container fluid -->
-        <!-- </div> bg container fluid -->
-    <!-- </div>container fluid -->
-<!-- </div> -->
+                </div> <!--ending down container fluid-->
+            </div> <!--intro container fluid-->
+        </div> <!--bg container fluid-->
+    </div><!--container fluid-->
+</div>
     <!--      recent completed projects -->
     <section class="pre-template">
         <div class="container pb-4">
