@@ -1,5 +1,6 @@
 <?php
 use App\Http\Livewire\HomeComponent;
+use App\Http\Livewire\CartComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\User\UserProfileComponent;
@@ -25,6 +26,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',HomeComponent::class)->name('main.home');
 Route::get('/products',ProfuctComponent::class)->name('home.products');
 Route::get('/products/details',DetailesComponent::class)->name('products.details');
+Route::get('/cart',CartComponent::class)->name('product.cart');
 
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

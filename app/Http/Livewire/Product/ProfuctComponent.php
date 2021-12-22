@@ -4,10 +4,18 @@ namespace App\Http\Livewire\Product;
 
 use Livewire\Component;
 use App\Models\User;
+use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
+use Livewire\WithPagination;
 
 class ProfuctComponent extends Component
 {
+    public function store($product_id,$product_name,$product_price)
+    {
+        Cart::add($product_id,$product_name,1,$product_price)->associate('App\Models\Product');
+        session()->flash('success_message','Item added in cart');
+        return redirect()->route('Total Payable Ammount');
+    }
     public function render()
     {
         
@@ -15,6 +23,7 @@ class ProfuctComponent extends Component
         if(Auth::check()){
             $user = User::find(Auth::user()->id);
         }
-        return view('livewire.product.profuct-component')->layout('layouts.product',['user'=>$user]);
+        $products = Product::paginate(12);
+        return view('livewire.product.profuct-component',['products'=>$products])->layout('layouts.product',['user'=>$user]);
     }
 }

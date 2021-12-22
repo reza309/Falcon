@@ -13,15 +13,21 @@
             <form wire:submit.prevent="updateProfile">
                 <div class="row">
                     <div class="col-lg-4">
-                        <?php if($newimage): ?>
-                        <img src="<?php echo e($newimage->temporaryUrl()); ?>" alt="Profile Image" class="img img-fluid profile-img ms-lg-3">
-                        <?php elseif($images): ?>
-                        <img src="<?php echo e(asset('storage/app/profile')); ?>/<?php echo e($images); ?>" alt="Profile Image" class="img img-fluid profile-img ms-lg-3">
-                        <?php else: ?>
-                        <img src="<?php echo e(asset('images/profile/default.png')); ?>" alt="Profile Image" class="img img-fluid profile-img ms-lg-3">
-                        <?php endif; ?>
-                        <div class="p-lg-3 mt-3">
-                        <input type="file" class="form-control" wire:model="newimage">
+                        <div class="row">
+                            <div class="col-lg-12 col-4">
+                            <?php if($newimage): ?>
+                            <img src="<?php echo e($newimage->temporaryUrl()); ?>" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0 p-lg-4">
+                            <?php elseif($images): ?>
+                            <img src="<?php echo e(asset('storage/app/profile')); ?>/<?php echo e($images); ?>" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0 p-lg-4">
+                            <?php else: ?>
+                            <img src="<?php echo e(asset('images/profile/default.png')); ?>" alt="Profile Image" class="img img-fluid profile-img ms-lg-3 p-0 p-lg-4">
+                            <?php endif; ?>
+                            </div>
+                            <div class="col-lg-12 col-8">
+                                <div class="p-lg-3 mt-3">
+                                    <input type="file" class="form-control" wire:model="newimage">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-8">
@@ -105,7 +111,7 @@
                                 </table>
                             </li>
                             <li class="list-group-item">
-                                <input type="submit" value="Save" class="btn btn-primary btn-custom border-0 pe-lg-5 ps-lg-5 float-end">
+                                <input type="submit" value="Save" class="btn btn-primary btn-custom border-0 pe-lg-5 ps-lg-5 float-end w-lg-auto w-100">
                                 <div class="clearfix"></div>
                             </li>
                         </ul>

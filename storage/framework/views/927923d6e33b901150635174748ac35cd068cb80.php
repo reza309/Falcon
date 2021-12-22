@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Falcon Products</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo e(asset('favicon/apple-touch-icon.png')); ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo e(asset('favicon/favicon-32x32.png')); ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo e(asset('favicon/favicon-16x16.png')); ?>">
     <!-- Bootstrap -->
     <link href="<?php echo e(asset('bootstrap/css/bootstrap.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('css/demo.css')); ?>" rel="stylesheet">
@@ -108,7 +108,12 @@
                             <a class="menu-item menue-sm me-3 mb-3" href="#">Priceing</a>
                             <a class="menu-item menue-sm me-3 mb-3" href="#">Faq</a>
                             <a class="menu-item menue-sm me-3 mb-3 login-right" href="login.html">Login</a>
-                            <a class="menu-item menue-sm me-3 me-md-0 mb-3 support" href="#">Support</a>
+                            <a class="menu-item menue-sm me-3 me-md-0 mb-3 support text-decoration-none" href="<?php echo e(route('product.cart')); ?>">
+                                <small>
+                                    <i class="fas fa-cart-plus"></i>
+                                </small>
+                                <span class="badge badge-pill bg-primary">90&plus;</span>
+                            </a>
                             <div class="clearfix"></div>
                         </div>
                         <div class="clearfix"></div>
@@ -206,6 +211,8 @@
     </script>
     <script src="<?php echo e(asset('js/preview.js')); ?>"></script>
 
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <?php echo $__env->yieldPushContent('modals'); ?>
     <?php echo \Livewire\Livewire::scripts(); ?>
 
 </body>
