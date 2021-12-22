@@ -1,6 +1,6 @@
-
+<div id="main">
 <!-- intro section -->
-<div class="bg-container" style="background-image: url(<?php echo e(asset('images/systems/pro-bg.jpg')); ?>);">
+<div class="bg-container" style="background-image: url(<?php echo e(asset('images/systems/pro-bg.jpg')); ?>);" >
     <div class="container-fluid intro-container"> 
         <div class="">
             <div class="">
@@ -90,7 +90,7 @@
                                 </small>
                             </div>
                             <div class="col-lg-12 col-12">
-                                <a href="#" class="btn btn-sm btn-primary btn-custom border-0 w-100 mt-2" wire::click.prevent="store(<?php echo e($product->id); ?>,'<?php echo e($product->name); ?>',<?php echo e($product->regular_price); ?>)">
+                                <a href="#" class="btn btn-sm btn-primary btn-custom border-0 w-100 mt-2" wire:click.prevent="store(<?php echo e($product->id); ?>,'<?php echo e($product->name); ?>',<?php echo e($product->regular_price); ?>)">
                                     Buy Now 
                                     <i class="fas fa-cart-plus"></i>
                                 </a>
@@ -165,4 +165,5 @@
                 </div>
             </div>
         </div>
-    </section><?php /**PATH C:\xampp\htdocs\falcon\resources\views/livewire/product/profuct-component.blade.php ENDPATH**/ ?>
+    </section>
+    </div><?php /**PATH C:\xampp\htdocs\falcon\resources\views/livewire/product/profuct-component.blade.php ENDPATH**/ ?>

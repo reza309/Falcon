@@ -281,7 +281,7 @@ header {
 }
 
 .ht-outer {
-	background-image: url("../images/systems/বিজি.jpg");
+	/* background-image: url("../images/systems/বিজি.jpg"); */
 	background-size: cover;
 	background-repeat: no-repeat;
 }

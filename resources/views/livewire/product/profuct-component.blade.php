@@ -1,6 +1,6 @@
-
+<div id="main">
 <!-- intro section -->
-<div class="bg-container" style="background-image: url({{asset('images/systems/pro-bg.jpg')}});">
+<div class="bg-container" style="background-image: url({{asset('images/systems/pro-bg.jpg')}});" >
     <div class="container-fluid intro-container"> 
         <div class="">
             <div class="">
@@ -90,7 +90,7 @@
                                 </small>
                             </div>
                             <div class="col-lg-12 col-12">
-                                <a href="#" class="btn btn-sm btn-primary btn-custom border-0 w-100 mt-2" wire::click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})">
+                                <a href="#" class="btn btn-sm btn-primary btn-custom border-0 w-100 mt-2" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})">
                                     Buy Now 
                                     <i class="fas fa-cart-plus"></i>
                                 </a>
@@ -166,3 +166,4 @@
             </div>
         </div>
     </section>
+    </div>
