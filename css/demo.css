@@ -272,6 +272,13 @@ header {
     font-variant: titling-caps;
 	font-size: 1.5rem;
 }
+.text-justify {
+	text-align: justify;
+}
+.bg-title{
+	background-color: #0D027D47;
+	border-left: 3px solid #0C0929; 
+}
 
 .ht-outer {
 	background-image: url("../images/systems/বিজি.jpg");

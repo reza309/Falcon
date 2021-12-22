@@ -5,6 +5,7 @@ use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\User\UserProfileComponent;
 use App\Http\Livewire\User\UserEditProfileComponent;
 use App\Http\Livewire\Product\ProfuctComponent;
+use App\Http\Livewire\Product\DetailesComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/',HomeComponent::class)->name('main.home');
 Route::get('/products',ProfuctComponent::class)->name('home.products');
+Route::get('/products/details',DetailesComponent::class)->name('products.details');
 
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

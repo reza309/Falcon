@@ -5,11 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SS Home Page</title>
+    <title>Falcon Products</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <!-- Bootstrap -->
     <link href="<?php echo e(asset('bootstrap/css/bootstrap.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('css/demo.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('tools/fontawesome-free-5.12.0-web/css/all.min.css')); ?>" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/flexslider.css')); ?>">
     <?php echo \Livewire\Livewire::styles(); ?>
 
 </head>
@@ -126,7 +130,7 @@
                         <div class="col-lg-4">
                             <div class="d-block d-lg-none pt-3"></div>
                             <div class="float-start">
-                                <img src="images/falcon-logo.png" alt="Falcon icon" class="img img-fluid foot-logo">
+                                <img src="<?php echo e(asset('images/falcon-logo.png')); ?>" alt="Falcon icon" class="img img-fluid foot-logo">
                             </div>
                             <span class="text-white-50 d-block mt-lg-3 ps-lg-5">
                                 Alright Reserved&copy; Falcon Soft Ltd.
@@ -176,8 +180,32 @@
     <script src="<?php echo e(asset('tools/fontawesome-free-5.12.0-web/js/all.min.js')); ?>"></script>
     <script src="<?php echo e(asset('js/nav.js')); ?>"></script>
     <script src="<?php echo e(asset('js/demo.js')); ?>"></script>
-    <script src="<?php echo e(asset('js/preview.js')); ?>"></script>
     
+    <script src="<?php echo e(asset('js/jquery.flexslider.js')); ?>"></script>
+    <script>
+        $(window).on('load',function() {
+    // The slider being synced must be initialized first
+    $('#carousel').flexslider({
+      animation: "slide",
+      controlNav: false,
+      animationLoop: false,
+      slideshow: false,
+      itemWidth: 210,
+      itemMargin: 5,
+      asNavFor: '#slider'
+    });
+   
+    $('#slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      animationLoop: false,
+      slideshow: false,
+      sync: "#carousel"
+    });
+  });
+    </script>
+    <script src="<?php echo e(asset('js/preview.js')); ?>"></script>
+
     <?php echo \Livewire\Livewire::scripts(); ?>
 
 </body>

@@ -13,7 +13,7 @@
     <link href="{{asset('bootstrap/css/bootstrap.css')}}" rel="stylesheet">
     <link href="{{asset('css/demo.css')}}" rel="stylesheet">
     <link href="{{asset('tools/fontawesome-free-5.12.0-web/css/all.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/flexslider.css')}}">
     @livewireStyles
 </head>
 
@@ -128,7 +128,7 @@
                         <div class="col-lg-4">
                             <div class="d-block d-lg-none pt-3"></div>
                             <div class="float-start">
-                                <img src="images/falcon-logo.png" alt="Falcon icon" class="img img-fluid foot-logo">
+                                <img src="{{asset('images/falcon-logo.png')}}" alt="Falcon icon" class="img img-fluid foot-logo">
                             </div>
                             <span class="text-white-50 d-block mt-lg-3 ps-lg-5">
                                 Alright Reserved&copy; Falcon Soft Ltd.
@@ -178,8 +178,32 @@
     <script src="{{asset('tools/fontawesome-free-5.12.0-web/js/all.min.js')}}"></script>
     <script src="{{asset('js/nav.js')}}"></script>
     <script src="{{asset('js/demo.js')}}"></script>
-    <script src="{{asset('js/preview.js')}}"></script>
     
+    <script src="{{asset('js/jquery.flexslider.js')}}"></script>
+    <script>
+        $(window).on('load',function() {
+    // The slider being synced must be initialized first
+    $('#carousel').flexslider({
+      animation: "slide",
+      controlNav: false,
+      animationLoop: false,
+      slideshow: false,
+      itemWidth: 210,
+      itemMargin: 5,
+      asNavFor: '#slider'
+    });
+   
+    $('#slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      animationLoop: false,
+      slideshow: false,
+      sync: "#carousel"
+    });
+  });
+    </script>
+    <script src="{{asset('js/preview.js')}}"></script>
+
     @livewireScripts
 </body>
 

@@ -169,7 +169,7 @@
                                 </small>
                             </div>
                             <div class="col-lg-12 col-12">
-                                <a href="#" class="btn btn-sm btn-primary btn-custom border-0 w-100 mt-2">
+                                <a href="<?php echo e(route('products.details')); ?>" class="btn btn-sm btn-primary btn-custom border-0 w-100 mt-2">
                                     Buy Now 
                                     <i class="fas fa-cart-plus"></i>
                                 </a>
