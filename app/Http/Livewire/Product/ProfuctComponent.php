@@ -12,7 +12,7 @@ class ProfuctComponent extends Component
 {
     public function store($product_id,$product_name,$product_price)
     {
-        if(Cart::count > 0)
+        if(Cart::count() > 0)
         {
             foreach(Cart::content() as $item)
             {
