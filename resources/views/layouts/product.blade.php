@@ -111,7 +111,17 @@
                                 <small>
                                     <i class="fas fa-cart-plus"></i>
                                 </small>
-                                <span class="badge badge-pill bg-primary">90&plus;</span>
+                                @if(Cart::count()>0)
+                                    <span class="badge badge-pill bg-primary">
+                                        @if(Cart::count()>9)
+                                            9 &plus;
+                                        @else
+                                        {{Cart::count()}}
+                                        @endif
+                                    </span>
+                                @else
+                                    <span class="badge badge-pill bg-primary">0</span>
+                                @endif
                             </a>
                             <div class="clearfix"></div>
                         </div>
