@@ -220,8 +220,8 @@
     <script src="{{asset('js/preview.js')}}"></script>
     <script>
     $(document).ready(function(){
-        $("#myBtn").click(function(){
-            $("#myToast").toast("show");
+        $("#liveToastBtn").click(function(){
+            $("#liveToast").toast("show");
         });
     });
     </script>
