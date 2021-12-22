@@ -5,6 +5,7 @@
             {{Session::get('success_message')}}
         </div>
     @endif
+    
     <b>Product Name</b>
     <hr>
     <ul class="list-group list-group-flush mb-5">
@@ -20,6 +21,7 @@
                         </div>
                         <div class="flex-grow-1">
                             <a href="#" class="text-decoration-none"><b>{{$item->model->name}}</b></a>
+                            {{$item->product_id}}
                         </div>
                     </div>
                 </div>
