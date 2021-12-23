@@ -48,6 +48,7 @@
             <h1 class="mt-4 hm-title">Falcon E-commerce Theme</h1>
             <p class="mb-4">New designs added regulary. Design blocks can be combined with any layout. </p>
             <hr>
+            
             <div class="row">
                 @foreach($products as $product)
                 <div class="col-lg-4 mb-lg-3">

@@ -1,7 +1,7 @@
 <div class="container mt-5">
     <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Products</a></li>
+        <li class="breadcrumb-item"><a href="{{route(main.home)}}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{route('home.products')}}">Products</a></li>
         <li class="breadcrumb-item active">Cart</li>
     </ul> 
     @if(Cart::count()>0)
