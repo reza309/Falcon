@@ -36,7 +36,7 @@ class ProfuctComponent extends Component
     }
     public function render()
     {
-        return Cart::content();
+        print_r(Cart::content());
         $user = null;
         if(Auth::check()){
             $user = User::find(Auth::user()->id);
