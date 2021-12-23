@@ -20,6 +20,7 @@ class ProfuctComponent extends Component
                 if($product_id == $item->id)
                 {
                     session()->flash('exist_message','Item Already in cart');
+                    break;
                     
                 }else{
                     Cart::add($product_id,$product_name,1,$product_price)->associate('App\Models\Product');
