@@ -17,7 +17,7 @@ class ProfuctComponent extends Component
             
             foreach(Cart::content() as $item)
             {
-                if($product_id == $item->product_id)
+                if($product_id == $item->id)
                 {
                     session()->flash('exist_message','Item Already in cart');
                     
@@ -36,7 +36,7 @@ class ProfuctComponent extends Component
     }
     public function render()
     {
-        print_r(Cart::content());
+        
         $user = null;
         if(Auth::check()){
             $user = User::find(Auth::user()->id);
