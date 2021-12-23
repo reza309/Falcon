@@ -14,7 +14,7 @@ class ProfuctComponent extends Component
     {
         if(Cart::count() > 0)
         {
-            return Cart::content();
+            
             foreach(Cart::content() as $item)
             {
                 if($product_id == $item->product_id)
@@ -36,7 +36,7 @@ class ProfuctComponent extends Component
     }
     public function render()
     {
-        
+        return Cart::content();
         $user = null;
         if(Auth::check()){
             $user = User::find(Auth::user()->id);
