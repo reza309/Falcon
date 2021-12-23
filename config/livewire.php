@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'asset_url' => env('APP_URL', 'https://falcon.msprog.xyz'),
+    'asset_url' => env('APP_URL', 'https://falcon.msprog.xyz/'),
 
     /*
     |--------------------------------------------------------------------------
