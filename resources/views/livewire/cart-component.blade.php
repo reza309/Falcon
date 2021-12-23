@@ -1,4 +1,9 @@
 <div class="container mt-5">
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Products</a></li>
+        <li class="breadcrumb-item active"><a href="#">Cart</a></li>
+    </ul> 
     @if(Cart::count()>0)
     @if(Session::has('success_message'))
         <div class="alert alert-success">

@@ -102,7 +102,7 @@
                             <a class="menu-item menue-sm me-3" href="{{route('main.home')}}">
                                 Home
                             </a>
-                            <a class="menu-item menue-sm me-3 mb-3 active" href="#">Demos</a>
+                            <a class="menu-item menue-sm me-3 mb-3 active" href="#">Products</a>
                             <a class="menu-item menue-sm me-3 mb-3" href="#">Features</a>
                             <a class="menu-item menue-sm me-3 mb-3" href="#">Priceing</a>
                             <a class="menu-item menue-sm me-3 mb-3" href="#">Faq</a>
