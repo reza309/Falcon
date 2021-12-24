@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container">
     <div class="pannel-default">
     <div class="pannel-heading">
         <h3>Admin categories</h3>
