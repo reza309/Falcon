@@ -8,10 +8,10 @@
         }
     </style>
     <div class="pannel-default">
-        <div class="pannel-heading">
-            <h3>Admin categories</h3>
+        <div class="pannel-heading p-lg-3">
+            <h3 class="text-white-50">Admin categories</h3>
         </div>
-        <div class="pannel-body">
+        <div class="pannel-body p-lg-3">
             <table class="table bg-white">
                 <tr>
                     <th>Id</th>
