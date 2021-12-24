@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Admin;
 
 use Livewire\Component;
 use Livewire\WithPagination;
+use App\Models\Category;
 
 class AdminCategoryComponent extends Component
 {
