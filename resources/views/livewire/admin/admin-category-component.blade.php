@@ -23,7 +23,7 @@
                 </tr>
                 @endforeach
             </table>
-            {{$categories->link()}}
+            {{$categories->links()}}
     </div>
     </div>
 </div>
