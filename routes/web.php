@@ -2,6 +2,7 @@
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\CartComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
+use App\Http\Livewire\Admin\AdminCategoryComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\User\UserProfileComponent;
 use App\Http\Livewire\User\UserEditProfileComponent;
@@ -44,4 +45,5 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
 // For user
 Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
     Route::get('/admin/dashboard',AdminDashboardComponent::class)->name('admin.dashboard');
+    Route::get('/admin/Category',AdminCategoryComponent::class)->name('admin.category');
 });

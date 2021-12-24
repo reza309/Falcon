@@ -57,12 +57,6 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <form action="{{route('logout')}}" method="post">
-                                    @csrf
-                                    <li class="nav-item">
-                                        <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();closest('form').submit();">logout</a>
-                                    </li>
-                                </form>
                             @else
                                 <li class="nav-item dropdown mb-lg-0 mb-3">
                                     <a href="{{route('user.dashboard')}}" class="nav-link dropdown-toggle border rounded" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color:#070317 !important; padding:4px">
