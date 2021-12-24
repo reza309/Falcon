@@ -45,5 +45,5 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
 // For user
 Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
     Route::get('/admin/dashboard',AdminDashboardComponent::class)->name('admin.dashboard');
-    Route::get('/admin/Category',AdminCategoryComponent::class)->name('admin.category');
+    Route::get('/admin/category',AdminCategoryComponent::class)->name('admin.category');
 });
