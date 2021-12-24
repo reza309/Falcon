@@ -23,6 +23,7 @@
                 </tr>
                 @endforeach
             </table>
+            {{$categories->link()}}
     </div>
     </div>
 </div>
