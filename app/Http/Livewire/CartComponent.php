@@ -5,7 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
-
+use Cart;
 class CartComponent extends Component
 {
     public function destroy($rowId)
