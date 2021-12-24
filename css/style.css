@@ -274,3 +274,8 @@ fill: #FF9800;
 .footer {
 	background-color: #0C0929;
 }
+
+.pannel-default {
+	background: #000000cf;
+	position: relative;
+}
