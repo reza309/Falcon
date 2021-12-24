@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Product;
 
 use Livewire\Component;
 use App\Models\User;
+use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
 
 class DetailesComponent extends Component
