@@ -11,7 +11,7 @@
                     <th>Slug</th>
                     <th>Action</th>
                 </tr>
-                @foreach(@categories as $category)
+                @foreach($categories as $category)
                 <tr>
                     <td>{{$category->id}}</td>
                     <td>{{$category->name}}</td>
