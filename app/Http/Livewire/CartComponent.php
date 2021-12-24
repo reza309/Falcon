@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Auth;
 
 class CartComponent extends Component
 {
+    public function destroy($rowId)
+    {
+        Cart::remove($rowId);
+        Session()->flash('success_message','Item has been removed');
+    }
     public function render()
     {
         $user = null;

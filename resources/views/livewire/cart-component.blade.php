@@ -53,7 +53,7 @@
                     </span>
                 </div>
                 <div class="col-lg-1">
-                    <span role="button" tabindex="0">
+                    <a href="#" wire:click.prevent="destroy({{$item->rowId}})" role="button" tabindex="0">
                         <i class="fas fa-times"></i>
                     </span>
                 </div>
