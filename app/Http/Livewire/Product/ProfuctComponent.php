@@ -17,7 +17,7 @@ class ProfuctComponent extends Component
             
             foreach(Cart::content() as $item)
             {
-                if($product_id == $item->id)
+                if($product_id === $item->id)
                 {
                     session()->flash('exist_message','Item Already in cart');
                     break;
