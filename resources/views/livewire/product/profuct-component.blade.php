@@ -56,7 +56,7 @@
                         <div class="grid-inner-c">
                             <img class="img img-fluid" src="{{asset('images/products')}}/{{$product->image}}" alt="template">
                         </div>
-                        <a href="#demo-1" target="_blank" class="preview-btn"> <span
+                        <a href="{{route('product.details',['slug'=>$product->slug])}}" target="_blank" class="preview-btn"> <span
                                 class="preview-text">Preview</span></a>
                     </div>
                     <div class="grit-bottom ps-lg-1 pt-lg-2 pb-lg-2 pe-lg-1 p-2">
