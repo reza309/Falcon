@@ -1,9 +1,17 @@
 <div class="container">
+    <style>
+        nav svg{
+            height:20px
+        }
+        nav .hidden{
+            display:block;
+        }
+    </style>
     <div class="pannel-default">
-    <div class="pannel-heading">
-        <h3>Admin categories</h3>
-    </div>
-    <div class="pannel-body">
+        <div class="pannel-heading">
+            <h3>Admin categories</h3>
+        </div>
+        <div class="pannel-body">
             <table class="table bg-white">
                 <tr>
                     <th>Id</th>
@@ -24,6 +32,6 @@
                 @endforeach
             </table>
             {{$categories->links()}}
-    </div>
+        </div>
     </div>
 </div>
